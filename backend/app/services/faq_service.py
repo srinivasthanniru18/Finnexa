@@ -50,13 +50,13 @@ class FAQService:
         """Initialize with default FAQ items."""
         default_faqs = [
             FAQItem(
-                id="what_is_finmda_bot",
-                question="What is FinMDA-Bot?",
-                answer="FinMDA-Bot is an AI-powered financial assistant that helps you analyze financial documents, calculate ratios, and get insights from your financial data. It can process PDFs, Excel files, and CSV files to extract financial information and answer your questions.",
+                id="what_is_fennexa",
+                question="What is Fennexa?",
+                answer="Fennexa is an AI-powered financial assistant that helps you analyze financial documents, calculate ratios, and get insights from your financial data. It can process PDFs, Excel files, and CSV files to extract financial information and answer your questions.",
                 category=FAQCategory.GENERAL,
-                keywords=["what", "is", "finmda", "bot", "assistant", "ai"],
+                keywords=["what", "is", "fennexa", "bot", "assistant", "ai"],
                 related_questions=["how_does_finmda_work", "what_can_finmda_do"],
-                examples=["What is FinMDA-Bot?", "Tell me about this AI assistant"],
+                examples=["What is Fennexa?", "Tell me about this AI assistant"],
                 difficulty="beginner",
                 last_updated=datetime.utcnow()
             ),
@@ -73,8 +73,8 @@ class FAQService:
             ),
             FAQItem(
                 id="what_financial_ratios",
-                question="What financial ratios can FinMDA-Bot calculate?",
-                answer="FinMDA-Bot can calculate various financial ratios including liquidity ratios (current ratio, quick ratio), profitability ratios (gross margin, net margin, ROE, ROA), leverage ratios (debt-to-equity, interest coverage), efficiency ratios (asset turnover, inventory turnover), and valuation ratios (P/E, P/B, EV/EBITDA).",
+                question="What financial ratios can Fennexa calculate?",
+                answer="Fennexa can calculate various financial ratios including liquidity ratios (current ratio, quick ratio), profitability ratios (gross margin, net margin, ROE, ROA), leverage ratios (debt-to-equity, interest coverage), efficiency ratios (asset turnover, inventory turnover), and valuation ratios (P/E, P/B, EV/EBITDA).",
                 category=FAQCategory.FINANCIAL_RATIOS,
                 keywords=["ratios", "calculate", "liquidity", "profitability", "leverage", "efficiency"],
                 related_questions=["how_to_calculate_ratios", "ratio_interpretation"],
@@ -107,7 +107,7 @@ class FAQService:
             FAQItem(
                 id="data_privacy_security",
                 question="Is my financial data secure and private?",
-                answer="Yes, FinMDA-Bot prioritizes data privacy and security. Your documents are processed locally when possible, and sensitive data is encrypted. We don't store your financial information permanently, and you can delete your data at any time. All communications are secured with industry-standard encryption.",
+                answer="Yes, Fennexa prioritizes data privacy and security. Your documents are processed locally when possible, and sensitive data is encrypted. We don't store your financial information permanently, and you can delete your data at any time. All communications are secured with industry-standard encryption.",
                 category=FAQCategory.TECHNICAL,
                 keywords=["privacy", "security", "data", "encryption", "safe"],
                 related_questions=["data_storage", "encryption_details"],
@@ -117,8 +117,8 @@ class FAQService:
             ),
             FAQItem(
                 id="forecasting_capabilities",
-                question="Can FinMDA-Bot predict future financial performance?",
-                answer="Yes, FinMDA-Bot can generate financial forecasts using advanced machine learning models. It analyzes historical trends and patterns to predict future revenue, expenses, and key financial metrics. However, all forecasts should be used as guidance and not as absolute predictions, as they depend on historical data and assumptions.",
+                question="Can Fennexa predict future financial performance?",
+                answer="Yes, Fennexa can generate financial forecasts using advanced machine learning models. It analyzes historical trends and patterns to predict future revenue, expenses, and key financial metrics. However, all forecasts should be used as guidance and not as absolute predictions, as they depend on historical data and assumptions.",
                 category=FAQCategory.FINANCIAL_RATIOS,
                 keywords=["forecast", "prediction", "future", "trends", "machine", "learning"],
                 related_questions=["forecast_accuracy", "trend_analysis"],
@@ -129,7 +129,7 @@ class FAQService:
             FAQItem(
                 id="supported_file_formats",
                 question="What file formats are supported?",
-                answer="FinMDA-Bot supports PDF files (including scanned documents), Excel files (.xlsx, .xls), CSV files, and Word documents (.docx). For PDFs, it can extract both text and tables. For Excel and CSV files, it can process multiple sheets and complex data structures.",
+                answer="Fennexa supports PDF files (including scanned documents), Excel files (.xlsx, .xls), CSV files, and Word documents (.docx). For PDFs, it can extract both text and tables. For Excel and CSV files, it can process multiple sheets and complex data structures.",
                 category=FAQCategory.DOCUMENT_PROCESSING,
                 keywords=["formats", "files", "pdf", "excel", "csv", "word"],
                 related_questions=["file_size_limits", "scanning_documents"],
@@ -139,8 +139,8 @@ class FAQService:
             ),
             FAQItem(
                 id="investment_analysis",
-                question="Can FinMDA-Bot help with investment analysis?",
-                answer="Yes, FinMDA-Bot can assist with investment analysis by calculating key investment ratios (P/E, P/B, ROE, ROA), analyzing company financial health, comparing performance metrics, and providing insights on investment opportunities. It can also analyze portfolio performance and risk metrics.",
+                question="Can Fennexa help with investment analysis?",
+                answer="Yes, Fennexa can assist with investment analysis by calculating key investment ratios (P/E, P/B, ROE, ROA), analyzing company financial health, comparing performance metrics, and providing insights on investment opportunities. It can also analyze portfolio performance and risk metrics.",
                 category=FAQCategory.INVESTMENT,
                 keywords=["investment", "analysis", "portfolio", "ratios", "performance"],
                 related_questions=["portfolio_analysis", "investment_ratios"],
@@ -151,7 +151,7 @@ class FAQService:
             FAQItem(
                 id="personal_finance_features",
                 question="What personal finance features are available?",
-                answer="FinMDA-Bot can help with personal finance by analyzing your income and expenses, calculating savings rates, tracking spending patterns, creating budgets, and providing financial health scores. It can process bank statements, credit card statements, and other personal financial documents.",
+                answer="Fennexa can help with personal finance by analyzing your income and expenses, calculating savings rates, tracking spending patterns, creating budgets, and providing financial health scores. It can process bank statements, credit card statements, and other personal financial documents.",
                 category=FAQCategory.PERSONAL_FINANCE,
                 keywords=["personal", "finance", "budget", "expenses", "savings"],
                 related_questions=["budget_analysis", "expense_tracking"],
@@ -353,7 +353,7 @@ class FAQService:
         # Add general suggestions if no specific context
         if not suggestions:
             suggestions = [
-                "What is FinMDA-Bot?",
+                "What is Fennexa?",
                 "How do I upload my financial documents?",
                 "What financial ratios can you calculate?",
                 "Can you help with investment analysis?",

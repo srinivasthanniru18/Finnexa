@@ -1,5 +1,5 @@
 """
-Enhanced Evaluation service for FinMDA-Bot.
+Enhanced Evaluation service for Fennexa.
 Implements comprehensive evaluation metrics, accuracy assessment, and performance monitoring.
 """
 import logging

@@ -1,5 +1,5 @@
 """
-Configuration settings for FinMDA-Bot application.
+Configuration settings for Fennexa application.
 """
 import os
 from typing import List
@@ -10,7 +10,7 @@ class Settings(BaseSettings):
     """Application settings loaded from environment variables."""
     
     # Application
-    app_name: str = "FinMDA-Bot"
+    app_name: str = "Fennexa"
     app_version: str = "1.0.0"
     debug: bool = True
     

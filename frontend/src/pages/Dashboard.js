@@ -148,7 +148,7 @@ const Dashboard = () => {
       <div className="flex items-center justify-between">
         <div>
           <h1 className="text-3xl font-bold text-gray-900">Dashboard</h1>
-          <p className="text-gray-600">Welcome to FinMDA-Bot - Your Financial AI Assistant</p>
+          <p className="text-gray-600">Welcome to Fennexa - Your Financial AI Assistant</p>
         </div>
         <div className="flex items-center space-x-4">
           {voiceEnabled && (
@@ -266,7 +266,7 @@ const Dashboard = () => {
       <div className="bg-gradient-to-r from-primary-500 to-primary-600 rounded-lg p-6 text-white">
         <div className="flex items-center justify-between">
           <div>
-            <h2 className="text-xl font-semibold mb-2">Getting Started with FinMDA-Bot</h2>
+            <h2 className="text-xl font-semibold mb-2">Getting Started with Fennexa</h2>
             <p className="text-primary-100 mb-4">
               Upload your financial documents and start asking questions to get AI-powered insights.
             </p>

@@ -1,8 +1,8 @@
-# FinMDA-Bot Architecture
+# Fennexa Architecture
 
 ## System Overview
 
-FinMDA-Bot is a comprehensive Financial Multi-Domain AI Assistant that combines document processing, conversational AI, financial analytics, and multi-agent intelligence to provide intelligent financial insights.
+Fennexa is a comprehensive Financial Multi-Domain AI Assistant that combines document processing, conversational AI, financial analytics, and multi-agent intelligence to provide intelligent financial insights.
 
 ## Architecture Diagram
 
@@ -297,4 +297,4 @@ Forecasting → Anomaly Detection → Visualization → Report Generation
 
 ## Conclusion
 
-FinMDA-Bot represents a comprehensive solution for financial document analysis and AI-powered insights. The architecture is designed for scalability, maintainability, and extensibility, providing a solid foundation for future enhancements and enterprise deployment.
+Fennexa represents a comprehensive solution for financial document analysis and AI-powered insights. The architecture is designed for scalability, maintainability, and extensibility, providing a solid foundation for future enhancements and enterprise deployment.

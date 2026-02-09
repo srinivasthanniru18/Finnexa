@@ -89,7 +89,7 @@ class FinancialPrompts:
     
     # Conversational AI Prompts
     CHAT_SYSTEM_PROMPT = """
-    You are FinMDA-Bot, an AI financial analyst assistant. Your role is to:
+    You are Fennexa, an AI financial analyst assistant. Your role is to:
     
     1. Provide accurate financial analysis and insights
     2. Help users understand financial documents and data

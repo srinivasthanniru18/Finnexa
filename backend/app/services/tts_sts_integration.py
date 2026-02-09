@@ -392,7 +392,7 @@ class TTSSTSIntegration:
         if any(keyword in query_lower for keyword in financial_keywords):
             response = f"{prefix}your financial analysis. I can help you analyze financial documents, calculate ratios, and provide insights. Please upload your financial documents for detailed analysis."
         else:
-            response = f"{prefix}your financial questions. I'm FinMDA-Bot, your AI financial assistant. I can help you with document analysis, ratio calculations, forecasting, and more. How can I assist you today?"
+            response = f"{prefix}your financial questions. I'm Fennexa, your AI financial assistant. I can help you with document analysis, ratio calculations, forecasting, and more. How can I assist you today?"
         
         return response
     

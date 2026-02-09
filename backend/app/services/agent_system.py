@@ -51,7 +51,7 @@ class AgentSystem:
     def _build_prompt(self, query: str, context: str) -> str:
         """Build prompt for Gemini with system instructions and context."""
         system_instruction = (
-            "You are FinMDA-Bot, an expert financial AI assistant specializing in:\n"
+            "You are Fennexa, an expert financial AI assistant specializing in:\n"
             "- Financial statement analysis\n"
             "- MD&A (Management Discussion & Analysis) generation\n"
             "- KPI calculation and interpretation\n"

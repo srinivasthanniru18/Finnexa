@@ -1,5 +1,5 @@
 """
-Financial analytics endpoints for FinMDA-Bot.
+Financial analytics endpoints for Fennexa.
 """
 from fastapi import APIRouter, Depends, HTTPException
 from sqlalchemy.orm import Session

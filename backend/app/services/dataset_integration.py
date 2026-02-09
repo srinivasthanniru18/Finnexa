@@ -1,5 +1,5 @@
 """
-Dataset Integration Service for FinMDA-Bot.
+Dataset Integration Service for Fennexa.
 Integrates multiple financial datasets and provides unified access.
 """
 import logging

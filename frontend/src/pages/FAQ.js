@@ -111,7 +111,7 @@ const FAQ = () => {
   ];
 
   const commonQuestions = [
-    'What is FinMDA-Bot?',
+    'What is Fennexa?',
     'How do I upload documents?',
     'What financial ratios can you calculate?',
     'Can you predict future performance?',
@@ -126,7 +126,7 @@ const FAQ = () => {
       {/* Header */}
       <div className="text-center">
         <h1 className="text-3xl font-bold text-gray-900">Help & FAQ</h1>
-        <p className="text-gray-600 mt-2">Find answers to common questions about FinMDA-Bot</p>
+        <p className="text-gray-600 mt-2">Find answers to common questions about Fennexa</p>
       </div>
 
       {/* Search Bar */}

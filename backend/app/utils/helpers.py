@@ -1,5 +1,5 @@
 """
-Utility functions for FinMDA-Bot.
+Utility functions for Fennexa.
 """
 import re
 import json

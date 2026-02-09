@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Database initialization script for FinMDA-Bot.
+Database initialization script for Fennexa.
 """
 import os
 import sys

@@ -160,7 +160,7 @@ const Sidebar = () => {
         {sidebarOpen && (
           <div className="p-4 border-t border-gray-200">
             <div className="text-xs text-gray-500 text-center">
-              <p>FinMDA-Bot v1.0.0</p>
+              <p>Fennexa v1.0.0</p>
               <p className="mt-1">Financial AI Assistant</p>
             </div>
           </div>

@@ -6,9 +6,24 @@ import numpy as np
 from typing import Dict, Any, List, Optional
 from datetime import datetime, timedelta
 import json
-from prophet import Prophet
-from sklearn.linear_model import LinearRegression
-from scipy import stats
+
+try:
+    from prophet import Prophet
+    PROPHET_AVAILABLE = True
+except BaseException:
+    PROPHET_AVAILABLE = False
+
+try:
+    from sklearn.linear_model import LinearRegression
+    SKLEARN_AVAILABLE = True
+except BaseException:
+    SKLEARN_AVAILABLE = False
+
+try:
+    from scipy import stats
+    SCIPY_AVAILABLE = True
+except BaseException:
+    SCIPY_AVAILABLE = False
 
 from app.config import settings
 

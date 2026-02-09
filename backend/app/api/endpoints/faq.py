@@ -6,10 +6,6 @@ from typing import Dict, List, Any, Optional
 import logging
 
 from app.services.faq_service import FAQService, FAQCategory
-<<<<<<< HEAD
-=======
-from app.schemas import ChatRequest, ChatResponse
->>>>>>> 5c3a0a0f3539fc0d352cb6c8a94fa282129f33e9
 
 router = APIRouter()
 logger = logging.getLogger(__name__)
@@ -290,7 +286,7 @@ async def get_quick_start_guide() -> Dict[str, Any]:
     """Get quick start guide for new users."""
     try:
         guide = {
-            'title': 'FinMDA-Bot Quick Start Guide',
+            'title': 'Fennexa Quick Start Guide',
             'steps': [
                 {
                     'step': 1,
@@ -318,7 +314,7 @@ async def get_quick_start_guide() -> Dict[str, Any]:
                 }
             ],
             'common_questions': [
-                'What is FinMDA-Bot?',
+                'What is Fennexa?',
                 'How do I upload documents?',
                 'What financial ratios can you calculate?',
                 'Can you predict future performance?',

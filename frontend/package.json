@@ -1,7 +1,7 @@
 {
-  "name": "finmda-bot-frontend",
+  "name": "fennexa-frontend",
   "version": "1.0.0",
-  "description": "FinMDA-Bot Frontend - Financial Multi-Domain AI Assistant",
+  "description": "Fennexa Frontend - Financial Multi-Domain AI Assistant",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",

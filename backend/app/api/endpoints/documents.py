@@ -1,5 +1,5 @@
 """
-Document processing endpoints for FinMDA-Bot.
+Document processing endpoints for Fennexa.
 """
 from fastapi import APIRouter, Depends, HTTPException, UploadFile, File, Form
 from sqlalchemy.orm import Session

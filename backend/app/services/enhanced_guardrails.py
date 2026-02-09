@@ -1,5 +1,5 @@
 """
-Enhanced Guardrails service for FinMDA-Bot.
+Enhanced Guardrails service for Fennexa.
 Implements comprehensive input/output validation, safety measures, and financial domain validation.
 """
 import re

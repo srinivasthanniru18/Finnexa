@@ -1,5 +1,5 @@
 """
-Document processing service for FinMDA-Bot.
+Document processing service for Fennexa.
 """
 from typing import Optional
 from datetime import datetime
@@ -7,7 +7,6 @@ import io
 
 from app.models import Document
 from app.database import SessionLocal
-from app.services.rag_service import RAGService
 
 try:
     import fitz  # PyMuPDF
@@ -78,6 +77,7 @@ class DocumentProcessor:
         # Index into Chroma (ignore failures)
         if extracted_text:
             try:
+                from app.services.rag_service import RAGService
                 rag = RAGService()
                 await rag.index_document(document_id, extracted_text, metadata)
             except Exception:

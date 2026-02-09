@@ -12,13 +12,18 @@ from dataclasses import dataclass
 from enum import Enum
 
 import google.generativeai as genai
-from langchain_google_genai import ChatGoogleGenerativeAI
-from langchain.prompts import PromptTemplate
-from langchain.chains import LLMChain
-from langchain.schema import Document
-from langchain_google_genai import GoogleGenerativeAIEmbeddings
-from langchain.vectorstores import Chroma
-from langchain.text_splitter import RecursiveCharacterTextSplitter
+
+try:
+    from langchain_google_genai import ChatGoogleGenerativeAI
+    from langchain.prompts import PromptTemplate
+    from langchain.chains import LLMChain
+    from langchain.schema import Document
+    from langchain_google_genai import GoogleGenerativeAIEmbeddings
+    from langchain.vectorstores import Chroma
+    from langchain.text_splitter import RecursiveCharacterTextSplitter
+    LANGCHAIN_AVAILABLE = True
+except BaseException:
+    LANGCHAIN_AVAILABLE = False
 
 from app.services.rag_service import RAGService
 from app.services.financial_analyzer import FinancialAnalyzer

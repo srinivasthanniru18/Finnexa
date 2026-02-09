@@ -1,5 +1,5 @@
 """
-Chat and conversational AI endpoints for FinMDA-Bot.
+Chat and conversational AI endpoints for Fennexa.
 """
 from fastapi import APIRouter, Depends, HTTPException
 from sqlalchemy.orm import Session
@@ -14,7 +14,6 @@ from app.schemas import (
     ChatSessionResponse, ChatMessageResponse
 )
 from app.services.agent_system import AgentSystem
-from app.services.rag_service import RAGService
 
 router = APIRouter()
 
@@ -112,6 +111,7 @@ async def chat_query(
     try:
         # Initialize services
         agent_system = AgentSystem()
+        from app.services.rag_service import RAGService
         rag_service = RAGService()
         
         # Get document context if available

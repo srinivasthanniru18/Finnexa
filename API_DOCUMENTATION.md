@@ -1,13 +1,13 @@
-# FinMDA-Bot API Documentation
+# Fennexa API Documentation
 
 ## Overview
 
-FinMDA-Bot provides a comprehensive REST API for financial document analysis, conversational AI, and advanced analytics. This documentation covers all available endpoints, request/response schemas, and usage examples.
+Fennexa provides a comprehensive REST API for financial document analysis, conversational AI, and advanced analytics. This documentation covers all available endpoints, request/response schemas, and usage examples.
 
 ## Base URL
 
 ```
-https://finmda-bot.onrender.com/api/v1
+https://fennexa.onrender.com/api/v1
 ```
 
 ## Authentication
@@ -96,7 +96,7 @@ Upload and process a financial document.
 
 **Example:**
 ```bash
-curl -X POST "https://finmda-bot.onrender.com/api/v1/documents/upload" \
+curl -X POST "https://fennexa.onrender.com/api/v1/documents/upload" \
   -H "Authorization: Bearer <token>" \
   -F "file=@financial_report.pdf"
 ```
@@ -608,23 +608,23 @@ Generate automated financial reports.
 
 ### Python SDK
 ```python
-from finmda_bot import FinMDAClient
+from fennexa import FennexaClient
 
-client = FinMDAClient(api_key="your_api_key")
+client = FennexaClient(api_key="your_api_key")
 response = client.upload_document("financial_report.pdf")
 ```
 
 ### JavaScript SDK
 ```javascript
-import { FinMDAClient } from 'finmda-bot-js';
+import { FennexaClient } from 'fennexa-js';
 
-const client = new FinMDAClient({ apiKey: 'your_api_key' });
+const client = new FennexaClient({ apiKey: 'your_api_key' });
 const response = await client.uploadDocument('financial_report.pdf');
 ```
 
 ## Webhooks
 
-FinMDA-Bot supports webhooks for real-time notifications:
+Fennexa supports webhooks for real-time notifications:
 
 ### Document Processing Complete
 ```json
@@ -662,6 +662,6 @@ FinMDA-Bot supports webhooks for real-time notifications:
 ## Support
 
 For API support and questions:
-- **Email**: support@finmda-bot.com
-- **Documentation**: https://docs.finmda-bot.com
-- **Status Page**: https://status.finmda-bot.com
+- **Email**: support@fennexa.com
+- **Documentation**: https://docs.fennexa.com
+- **Status Page**: https://status.fennexa.com

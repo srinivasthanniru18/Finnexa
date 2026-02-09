@@ -1,5 +1,5 @@
 """
-FinMDA-Bot FastAPI application entry point.
+Fennexa FastAPI application entry point.
 """
 from fastapi import FastAPI, HTTPException, Depends
 from fastapi.middleware.cors import CORSMiddleware
@@ -58,7 +58,7 @@ async def startup_event():
 @app.on_event("shutdown")
 async def shutdown_event():
     """Cleanup on application shutdown."""
-    print("👋 FinMDA-Bot shutting down...")
+    print("👋 Fennexa shutting down...")
 
 
 @app.exception_handler(Exception)

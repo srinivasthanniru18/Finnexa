@@ -246,7 +246,7 @@ const Chat = () => {
       {/* Header */}
       <div className="flex items-center justify-between p-4 border-b border-gray-200">
         <div>
-          <h1 className="text-2xl font-bold text-gray-900">Chat with FinMDA-Bot</h1>
+          <h1 className="text-2xl font-bold text-gray-900">Chat with Fennexa</h1>
           <p className="text-gray-600">Ask questions about your financial data</p>
         </div>
         <div className="flex items-center space-x-2">
@@ -275,7 +275,7 @@ const Chat = () => {
               <FiBot size={32} className="text-primary-500" />
             </div>
             <h3 className="text-lg font-medium text-gray-900 mb-2">
-              Welcome to FinMDA-Bot!
+              Welcome to Fennexa!
             </h3>
             <p className="text-gray-600 mb-6">
               I'm your AI financial assistant. Upload documents and ask questions to get started.

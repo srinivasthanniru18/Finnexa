@@ -176,7 +176,7 @@ const useAppStore = create(
       })
     }),
     {
-      name: 'finmda-bot-store',
+      name: 'fennexa-store',
       partialize: (state) => ({
         theme: state.theme,
         settings: state.settings,

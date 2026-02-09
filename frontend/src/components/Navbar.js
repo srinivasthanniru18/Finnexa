@@ -69,7 +69,7 @@ const Navbar = () => {
       case '/settings':
         return 'Settings';
       default:
-        return 'FinMDA-Bot';
+        return 'Fennexa';
     }
   };
 
@@ -85,11 +85,8 @@ const Navbar = () => {
         </button>
         
         <div className="flex items-center space-x-2">
-          <div className="w-8 h-8 bg-primary-500 rounded-lg flex items-center justify-center">
-            <span className="text-white font-bold text-sm">F</span>
-          </div>
           <h1 className="text-xl font-semibold text-gray-900">
-            FinMDA-Bot
+            Fennexa
           </h1>
         </div>
         

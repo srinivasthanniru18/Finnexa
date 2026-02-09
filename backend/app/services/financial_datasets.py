@@ -1,5 +1,5 @@
 """
-Financial Datasets Integration for FinMDA-Bot.
+Financial Datasets Integration for Fennexa.
 Integrates multiple open source financial datasets for comprehensive analysis.
 """
 import logging

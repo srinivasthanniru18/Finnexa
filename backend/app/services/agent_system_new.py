@@ -53,7 +53,7 @@ class AgentSystem:
     def _build_prompt(self, query: str, context: str) -> str:
         """Build a comprehensive prompt for the LLM."""
         
-        system_instruction = """You are FinMDA-Bot, an expert financial AI assistant specializing in:
+        system_instruction = """You are Fennexa, an expert financial AI assistant specializing in:
 - Financial document analysis
 - Financial ratio calculations
 - Trend analysis and forecasting

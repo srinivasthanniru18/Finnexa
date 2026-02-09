@@ -416,7 +416,7 @@ const Settings = () => {
       <div className="flex items-center justify-between">
         <div>
           <h1 className="text-3xl font-bold text-gray-900">Settings</h1>
-          <p className="text-gray-600">Customize your FinMDA-Bot experience</p>
+          <p className="text-gray-600">Customize your Fennexa experience</p>
         </div>
         <div className="flex items-center space-x-4">
           {hasChanges && (

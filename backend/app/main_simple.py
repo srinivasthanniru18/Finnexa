@@ -1,5 +1,5 @@
 """
-FinMDA-Bot FastAPI application entry point - Simplified version.
+Fennexa FastAPI application entry point - Simplified version.
 """
 from fastapi import FastAPI, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
@@ -10,7 +10,7 @@ import os
 
 # Create FastAPI application
 app = FastAPI(
-    title="FinMDA-Bot",
+    title="Fennexa",
     version="1.0.0",
     description="Financial Multi-Domain AI Assistant for document analysis and insights",
     docs_url="/docs",
@@ -30,7 +30,7 @@ app.add_middleware(
 async def root():
     """Root endpoint with API information."""
     return {
-        "message": "Welcome to FinMDA-Bot",
+        "message": "Welcome to Fennexa",
         "version": "1.0.0",
         "docs_url": "/docs",
         "health_url": "/api/v1/health"
@@ -42,7 +42,7 @@ async def health_check():
     return {
         "status": "healthy",
         "timestamp": datetime.utcnow().isoformat(),
-        "service": "FinMDA-Bot API"
+        "service": "Fennexa API"
     }
 
 @app.get("/api/v1/chat")

@@ -6,7 +6,7 @@ services:
     image: postgres:15-alpine
     container_name: finmda-postgres
     environment:
-      POSTGRES_DB: finmda_bot
+      POSTGRES_DB: fennexa
       POSTGRES_USER: finmda_user
       POSTGRES_PASSWORD: finmda_password
     volumes:
@@ -15,7 +15,7 @@ services:
     ports:
       - "5432:5432"
     healthcheck:
-      test: ["CMD-SHELL", "pg_isready -U finmda_user -d finmda_bot"]
+      test: ["CMD-SHELL", "pg_isready -U finmda_user -d fennexa"]
       interval: 30s
       timeout: 10s
       retries: 3
@@ -41,13 +41,9 @@ services:
       dockerfile: Dockerfile
     container_name: finmda-backend
     environment:
-      - DATABASE_URL=postgresql://finmda_user:finmda_password@postgres:5432/finmda_bot
+      - DATABASE_URL=postgresql://finmda_user:finmda_password@postgres:5432/fennexa
       - REDIS_URL=redis://redis:6379
-<<<<<<< HEAD
       - GEMINI_API_KEY=${GEMINI_API_KEY}
-=======
-      - OPENAI_API_KEY=${OPENAI_API_KEY}
->>>>>>> 5c3a0a0f3539fc0d352cb6c8a94fa282129f33e9
       - CHROMA_DB_PATH=/app/chromadb
       - AWS_ACCESS_KEY_ID=${AWS_ACCESS_KEY_ID}
       - AWS_SECRET_ACCESS_KEY=${AWS_SECRET_ACCESS_KEY}
@@ -99,13 +95,9 @@ services:
     container_name: finmda-celery-worker
     command: celery -A app.celery worker --loglevel=info
     environment:
-      - DATABASE_URL=postgresql://finmda_user:finmda_password@postgres:5432/finmda_bot
+      - DATABASE_URL=postgresql://finmda_user:finmda_password@postgres:5432/fennexa
       - REDIS_URL=redis://redis:6379
-<<<<<<< HEAD
       - GEMINI_API_KEY=${GEMINI_API_KEY}
-=======
-      - OPENAI_API_KEY=${OPENAI_API_KEY}
->>>>>>> 5c3a0a0f3539fc0d352cb6c8a94fa282129f33e9
       - CHROMA_DB_PATH=/app/chromadb
     volumes:
       - ./backend:/app
@@ -127,13 +119,9 @@ services:
     container_name: finmda-celery-beat
     command: celery -A app.celery beat --loglevel=info
     environment:
-      - DATABASE_URL=postgresql://finmda_user:finmda_password@postgres:5432/finmda_bot
+      - DATABASE_URL=postgresql://finmda_user:finmda_password@postgres:5432/fennexa
       - REDIS_URL=redis://redis:6379
-<<<<<<< HEAD
       - GEMINI_API_KEY=${GEMINI_API_KEY}
-=======
-      - OPENAI_API_KEY=${OPENAI_API_KEY}
->>>>>>> 5c3a0a0f3539fc0d352cb6c8a94fa282129f33e9
       - CHROMA_DB_PATH=/app/chromadb
     volumes:
       - ./backend:/app

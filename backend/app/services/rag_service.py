@@ -1,9 +1,19 @@
 """
 RAG (Retrieval-Augmented Generation) service for document context retrieval.
 """
-import chromadb
-from chromadb.config import Settings
-from sentence_transformers import SentenceTransformer
+try:
+    import chromadb
+    from chromadb.config import Settings as ChromaSettings
+    CHROMADB_AVAILABLE = True
+except BaseException:
+    CHROMADB_AVAILABLE = False
+
+try:
+    from sentence_transformers import SentenceTransformer
+    SENTENCE_TRANSFORMERS_AVAILABLE = True
+except BaseException:
+    SENTENCE_TRANSFORMERS_AVAILABLE = False
+
 from typing import List, Dict, Any, Optional
 import json
 import re
@@ -17,19 +27,29 @@ class RAGService:
     
     def __init__(self):
         """Initialize RAG service with ChromaDB and embeddings."""
-        self.client = chromadb.PersistentClient(
-            path=settings.chroma_persist_directory,
-            settings=Settings(anonymized_telemetry=False)
-        )
+        self.client = None
+        self.embedding_model = None
+        self.collection = None
         
-        # Initialize embedding model
-        self.embedding_model = SentenceTransformer(settings.embedding_model)
+        if CHROMADB_AVAILABLE:
+            try:
+                self.client = chromadb.PersistentClient(
+                    path=settings.chroma_persist_directory,
+                    settings=ChromaSettings(anonymized_telemetry=False)
+                )
+                # Get or create collection
+                self.collection = self.client.get_or_create_collection(
+                    name="financial_documents",
+                    metadata={"description": "Financial document embeddings for Fennexa"}
+                )
+            except Exception as e:
+                print(f"Warning: ChromaDB initialization failed: {e}")
         
-        # Get or create collection
-        self.collection = self.client.get_or_create_collection(
-            name="financial_documents",
-            metadata={"description": "Financial document embeddings for FinMDA-Bot"}
-        )
+        if SENTENCE_TRANSFORMERS_AVAILABLE:
+            try:
+                self.embedding_model = SentenceTransformer(settings.embedding_model)
+            except Exception as e:
+                print(f"Warning: SentenceTransformer initialization failed: {e}")
     
     async def index_document(self, document_id: int, content: str, metadata: Dict[str, Any]) -> bool:
         """Index a document for retrieval."""

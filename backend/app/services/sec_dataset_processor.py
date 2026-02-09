@@ -1,5 +1,5 @@
 """
-SEC Financial Statement Dataset Processor for FinMDA-Bot.
+SEC Financial Statement Dataset Processor for Fennexa.
 Processes and integrates SEC financial statement extracts from Kaggle.
 """
 import logging
